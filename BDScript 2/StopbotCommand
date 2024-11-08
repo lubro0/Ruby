@@ -3,7 +3,7 @@ $if[$getUserVar[runningBot]==false]
 $deletecommand
 $else
 $setUserVar[runningBot;false]
-**Bot has been stopped! ✅**
+**Bot has been stopped ✅**
 $deletecommand
 $deleteIn[1s]
 $endif
