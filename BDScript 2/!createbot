@@ -1,11 +1,11 @@
 $nomention
 $if[$getUserVar[runningBot]==false]
+$setUserVar[runningBot;true;$authorID]
 **Bot started ✅**
 $deletecommand
 $deleteIn[1s]
-$setUserVar[runningBot;true]
-$endif
-
-$if[$getUserVar[runningBot]==true]
+$else
 **You already have a bot running ❌**
+$deletecommand
+$deleteIn[1s]
 $endif
